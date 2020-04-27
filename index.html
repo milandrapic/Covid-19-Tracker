@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Covid-19 Tracker</title>
+<script src="index.js" defer></script>
+<style>
+   h1{
+       text-align: center;
+       font-family:monospace;
+       margin-left: 35%;
+       margin-right: 35%;
+       width: 30%;
+   }
+   #in{
+       font-family:monospace;
+       margin-left: 40%;
+       margin-right: 40%;
+       width: 20%;
+   }
+   #c{
+       padding: 5%;
+   }
+    .t{
+        margin: auto;
+        text-align: center;
+        border: 1px solid;
+        border-width: 2px;
+        border-color: blue;
+    }
+    td, th{
+        border: 1px solid black;
+    }
+    body{
+        background-color:lightgrey;
+    }
+</style>
+</head>
+
+<body>
+<h1>COVID-19 STATS BY COUNTRY</h1>
+    <div id="in">
+        Enter Country:<input type="text" id="input">
+        <button id = "myBtn" onclick="getRes()">Search</button>
+    </div>
+    <div id="coun">
+            <br><br>
+        <table class="t">
+            <tr><th>Country</th>
+                <th>New Confirmed Cases</th>
+                <th>Total Confirmed</th>
+                <th>New Deaths</th>
+                <th>Total Deaths</th>
+                <th>New Recovered</th>
+                <th>Total Recovered</th>
+            </tr>
+
+            <tr>               
+                <td id="c"></td>
+                <td id="nc"></td>
+                <td id="tc"></td>
+                <td id="nd"></td>
+                <td id="td"></td>
+                <td id="nr"></td>
+                <td id="tr"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
